@@ -1,0 +1,17 @@
+.responsive-logo
+{
+    height: 6rem;
+}
+
+/* @media (max-width: 768px) {
+    .responsive-logo {
+      height: 4rem;
+    }
+  } */
+  
+
+  @media (max-width: 480px) {
+    .responsive-logo {
+       height: auto;
+  }
+}

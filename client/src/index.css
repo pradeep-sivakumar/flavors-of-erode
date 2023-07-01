@@ -1,0 +1,15 @@
+/* Global CSS */
+@font-face {
+  /* font-family: 'Niagara'; */
+  font-family: Niagara;
+  src: url(./assets//Fonts/NIAGSOL.TTF);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

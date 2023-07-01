@@ -1,0 +1,35 @@
+.footer-logo
+{
+    height : 3.5rem;
+    max-width: 100%;
+    margin-top: 1.5rem;
+}
+
+.star-logo
+{
+    margin: 1.3rem;
+}
+
+.copyright
+{
+    color: white;
+    padding: 1.5rem;
+    height : auto;
+    width: 100%;
+    text-align: center;
+    background-color: #262526;
+}
+.icons-flex
+{
+    padding-top: 2.5rem;
+   
+    font-size:larger;
+    width: 10rem;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.icons-flex a{
+    color:white
+}

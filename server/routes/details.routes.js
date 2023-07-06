@@ -4,7 +4,7 @@ const router = express.Router()
 
 const DetailsModel = require('../models/Details')
 
-
+// get
 router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;

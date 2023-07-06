@@ -15,7 +15,6 @@ import theme from "../../theme";
 import axios from "axios";
 import LoginIcon from "@mui/icons-material/Login";
 import Footer from "../Shared/Footer/Footer";
-import { red } from "@mui/material/colors";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -30,14 +29,19 @@ const Login = () => {
         username,
         password,
       });
+      setErrorMessage(null);
       console.log(response.data);
-      setErrorMessage("");
+
     } catch (error) {
       // Handle login error
+      setErrorMessage("Password error");
       console.log(error.response.data);
-      setErrorMessage(error.response.data);
     }
+    ;
   };
+
+
+  
 
   return (
     <ThemeProvider theme={theme}>
@@ -78,8 +82,6 @@ const Login = () => {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
-                error={errorMessage && errorMessage} // Display error if name is empty
-                helperText={errorMessage && errorMessage ? "Name is required" : ""}
                 variant="outlined"
                 color="secondary" // Set the text field color to red
               />
@@ -93,14 +95,17 @@ const Login = () => {
                 required
               />
 
+              {/* write code to display error message if error meesage is there */}
               {errorMessage && (
-                <>
-                  <Typography varient="\subtitle2" color={"red"}>
-                    {errorMessage}
-                  </Typography>
-                </>
+                <Typography
+                  style={{ color: "red", marginBottom: "1rem" }}
+                  variant="body1"
+                  component="p"
+                >
+                  {errorMessage}
+                </Typography>
               )}
-
+              
               <Button
                 type="submit"
                 variant="contained"

@@ -20,19 +20,17 @@ app.use(express.json())
 app.use('/api/login', loginRoutes)
 
 
- //for posts page
-app.use('/api/posts/' ,postRoutes)
-
-
+//for posts page
+app.use('/api/posts/', postRoutes)
 
 
 //menu page routes
 app.use('/api/menu/variety', varietyRoutes)
-app.use('/api/menu' ,menuRoutes) 
+app.use('/api/menu', menuRoutes)
 
 
 //for testimonials page
-app.use('/api/testimonials', testimonialRoutes) 
+app.use('/api/testimonials', testimonialRoutes)
 
 
 //event page routes
@@ -40,7 +38,7 @@ app.use('/api/events', eventRoutes)
 
 
 //details routes
-app.use('/api/more/details',detailRoutes)
+app.use('/api/more/details', detailRoutes)
 
 
 //gallery routes
@@ -48,7 +46,7 @@ app.use('/api/more/gallery', galleryRoutes)
 
 
 //award - our story routes
-app.use('/api/ourstory/awards',awardRoutes)
+app.use('/api/ourstory/awards', awardRoutes)
 
 
 //listening to port 

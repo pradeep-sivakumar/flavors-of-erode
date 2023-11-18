@@ -1,11 +1,16 @@
-import './App.css';
-import Login from'./Components/Admin/Login';
-
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import AdminLogin from './Pages/Admin/admin-login/AdminLogin'
 function App() {
   return (
-    <div>
-      <Login/>
-    </div>
+    <>
+      <Routes>
+        {/* <Route path="/" element={} /> */}
+        <Route path="/admin" element={<AdminLogin />} />
+        {/*  <Route path="/" element={<Contact />} />
+        <Route path="*" element={<NoPage />} /> */}
+      </Routes>
+    </>
   );
 }
 

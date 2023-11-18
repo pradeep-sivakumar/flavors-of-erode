@@ -7,9 +7,8 @@ import {
   Typography,
   TextField,
   Button,
-  Hidden,
 } from "@mui/material";
-import NavBar from "./Navbar/Navbar";
+import NavBar from "../../../Components/";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../../theme";
 import axios from "axios";
@@ -83,7 +82,7 @@ const Login = () => {
                 onChange={(e) => setUsername(e.target.value)}
                 required
                 variant="outlined"
-                color="secondary" // Set the text field color to red
+                color="secondary"
               />
               <TextField
                 label="Password"
@@ -95,7 +94,6 @@ const Login = () => {
                 required
               />
 
-              {/* write code to display error message if error meesage is there */}
               {errorMessage && (
                 <Typography
                   style={{ color: "red", marginBottom: "1rem" }}

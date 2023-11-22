@@ -1,5 +1,6 @@
 const cors = require('cors')
 const express = require('express');
+require('dotenv').config()
 require('./db')
 
 const loginRoutes = require('./routes/login.routes')
@@ -48,8 +49,8 @@ app.use('/api/more/gallery', galleryRoutes)
 //award - our story routes
 app.use('/api/ourstory/awards', awardRoutes)
 
-
+const PORT = process.env.PORT || 8000
 //listening to port 
-app.listen(8000, () => {
-    console.log('Server is listening at port 8000');
+app.listen(PORT, () => {
+    console.log(`Server is listening at port ${PORT}`);
 })

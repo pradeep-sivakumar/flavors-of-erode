@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-
-mongoose.connect('mongodb+srv://pradeep:pradeep@flavorsoferodecluster.tqyrjpa.mongodb.net/flavorsoferode?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('Connected to MongoDB');
   })

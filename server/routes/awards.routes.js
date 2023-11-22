@@ -1,4 +1,3 @@
-const mongoose = require('mongoose');
 const express = require('express');
 const Awards = require('../models/Awards');
 const router = express.Router()

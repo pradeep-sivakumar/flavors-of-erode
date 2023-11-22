@@ -7,4 +7,4 @@ const varietySchema = new mongoose.Schema({
     }
 }, {timestamps: true})
 
-module.exports = VarietyModal = mongoose.model('dishVarieties', varietySchema);
+module.exports = VarietyModal = mongoose.model('dishvarieties', varietySchema);

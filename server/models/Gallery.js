@@ -15,4 +15,4 @@ const galleryImageSchema = new mongoose.Schema({
     }
 }, {timestamps: true})
 
-module.exports = mongoose.model('galleryImages', galleryImageSchema);
+module.exports = mongoose.model('galleryimages', galleryImageSchema);

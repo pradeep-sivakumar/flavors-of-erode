@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/restaurant')
-    .then(() => {
-      console.log('Connected to MongoDB');
-    })
-    .catch(error => {
-      console.error('Error connecting to MongoDB:', error);
-    });
+mongoose.connect('mongodb+srv://pradeep:pradeep@flavorsoferodecluster.tqyrjpa.mongodb.net/flavorsoferode?retryWrites=true&w=majority')
+  .then(() => {
+    console.log('Connected to MongoDB');
+  })
+  .catch(error => {
+    console.error('Error connecting to MongoDB: ', error);
+  });

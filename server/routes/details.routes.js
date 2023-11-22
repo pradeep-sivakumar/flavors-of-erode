@@ -4,10 +4,10 @@ const router = express.Router()
 const DetailsModel = require('../models/Details')
 
 // get
-router.get('/:id', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const { id } = req.params;
-    const details = await DetailsModel.findById(id);
+  
+    const details = await DetailsModel.findOne();
     res.json(details);
   } catch (error) {
     console.error(error);

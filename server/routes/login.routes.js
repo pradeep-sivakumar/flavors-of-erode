@@ -8,8 +8,8 @@ router.post('/', async (req, res) => {
     const { username, password } = req.body;
 
     // for new user
-    const newUser = new User({ username, password});
-    await newUser.save()
+    // const newUser = new User({ username, password});
+    // await newUser.save()
   
     try {
       const user = await User.findOne({ username });
